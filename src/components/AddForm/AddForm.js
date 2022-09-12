@@ -12,9 +12,10 @@ export default function AddForm () {
         cbd: 0,
         cbg: 0,
         terpene: "",
-        flavor: [],
-        helpw: [],
-        isLocked: false
+        flavor: "",
+        helpw: "",
+        isLocked: true,
+        image: "",
     });
 
     function handleChange(e){
@@ -87,6 +88,13 @@ export default function AddForm () {
                 id="helpw"
                 helpw="helpw"
                 value={form.helpw}
+                onChange={handleChange}
+            />
+            <label htmlFor="image">Image</label>
+            <input 
+                id="image"
+                name="image"
+                value={form.image}
                 onChange={handleChange}
             />
 

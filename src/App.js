@@ -3,9 +3,11 @@ import AddForm from "./components/AddForm/AddForm"
 import InfoPage from "./pages/InfoPage/InfoPage";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
+    
     <div className="App">
       <Navbar />
       <Routes>
