@@ -41,52 +41,59 @@ export default function AddForm () {
 
     return (
         <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Name</label>
+            <input 
+                id="name"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+            />
             <label htmlFor="type">Type</label>
             <input 
                 id="type"
-                type="type"
+                name="type"
                 value={form.type}
                 onChange={handleChange}
             />
             <label htmlFor="thc">THC</label>
             <input 
                 id="thc"
-                thc="thc"
+                name="thc"
                 value={form.thc}
                 onChange={handleChange}
             />
             <label htmlFor="cbd">CBD</label>
             <input 
                 id="cbd"
-                cbd="cbd"
+                name="cbd"
                 value={form.cbd}
                 onChange={handleChange}
             />
             <label htmlFor="cbg">CBG</label>
             <input 
                 id="cbg"
-                cbg="cbg"
+                name="cbg"
                 value={form.cbg}
                 onChange={handleChange}
             />
             <label htmlFor="terpeno">Terpene</label>
             <input 
-                id="terpeno"
-                terpeno="terpeno"
+                id="terpene"
+                name="terpene"
                 value={form.terpene}
                 onChange={handleChange}
             />
             <label htmlFor="flavor">Flavor</label>
             <input 
                 id="flavor"
-                flavor="flavor"
+                name="flavor"
                 value={form.flavor}
                 onChange={handleChange}
             />
             <label htmlFor="helpw">Helps With</label>
             <input 
                 id="helpw"
-                helpw="helpw"
+                name="helpw"
                 value={form.helpw}
                 onChange={handleChange}
             />
