@@ -1,20 +1,20 @@
 import { useState } from "react";
 import axios from "axios";
-
 import { useNavigate } from "react-router-dom"
 
 
-export default function List () {
+export default function AddForm () {
     const navigate = useNavigate();
     const [form, setForm] = useState({
         name: "",
         type: "",
-        thc: "",
-        cbd: "",
-        cbg: "",
-        terpeno: "",
-        flavor: "",
-        helpw: [""],
+        thc: 0,
+        cbd: 0,
+        cbg: 0,
+        terpene: "",
+        flavor: [],
+        helpw: [],
+        isLocked: false
     });
 
     function handleChange(e){
@@ -26,7 +26,7 @@ export default function List () {
     
         try {
           const response = await axios.post(
-            "https://ironrest.herokuapp.com/",
+            "https://ironrest.herokuapp.com/the-healing-cure",
             form
           );
     
@@ -68,11 +68,11 @@ export default function List () {
                 value={form.cbg}
                 onChange={handleChange}
             />
-            <label htmlFor="terpeno">Terpeno</label>
+            <label htmlFor="terpeno">Terpene</label>
             <input 
                 id="terpeno"
                 terpeno="terpeno"
-                value={form.terpeno}
+                value={form.terpene}
                 onChange={handleChange}
             />
             <label htmlFor="flavor">Flavor</label>
@@ -82,7 +82,7 @@ export default function List () {
                 value={form.flavor}
                 onChange={handleChange}
             />
-            <label htmlFor="helpw">Help With</label>
+            <label htmlFor="helpw">Helps With</label>
             <input 
                 id="helpw"
                 helpw="helpw"
