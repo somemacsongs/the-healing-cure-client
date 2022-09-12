@@ -15,6 +15,7 @@ export default function List () {
         terpeno: "",
         flavor: "",
         helpw: [""],
+        image: "",
     });
 
     function handleChange(e){
@@ -87,6 +88,13 @@ export default function List () {
                 id="helpw"
                 helpw="helpw"
                 value={form.helpw}
+                onChange={handleChange}
+            />
+            <label htmlFor="image">Image</label>
+            <input 
+                id="image"
+                name="image"
+                value={form.Image}
                 onChange={handleChange}
             />
 
