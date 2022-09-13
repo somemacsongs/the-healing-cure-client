@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"
-
+import { Link } from "react-router-dom"
+import toast from "react-hot-toast"
+import style from "./AddForm.module.css"
 
 export default function AddForm () {
-    const navigate = useNavigate();
     const [form, setForm] = useState({
         name: "",
         type: "",
@@ -30,17 +30,30 @@ export default function AddForm () {
             "https://ironrest.herokuapp.com/the-healing-cure",
             form
           );
-    
-          navigate("/");
-    
-          console.log(response);
+          handleToast();
         } catch (err) {
           console.log(err);
         }
       }
 
+      function handleToast(){
+        toast((t) => (
+          <span>
+            Would you like to keep adding strains?
+            <button className= "btn btn-success" onClick={() => toast.dismiss(t.id)}>
+              Yes
+            </button>
+            <Link to="/explore">
+                <button className= "btn btn-primary">
+                    No
+                </button>
+            </Link>
+          </span>
+        ));
+      }
+    
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={style.grid}>
             <label htmlFor="name">Name</label>
             <input 
                 id="name"
