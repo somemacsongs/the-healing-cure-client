@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+
+h4{
+    margin-left: 1rem;
+}
+
+.primary:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(0, 68, 128);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.warning:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(173, 173, 0);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.danger:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(128, 0, 0);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}

@@ -1,0 +1,27 @@
+.primary:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(0, 68, 128);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.secondary:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(66, 67, 66);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.warning:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(173, 173, 0);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.danger:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(128, 0, 0);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}

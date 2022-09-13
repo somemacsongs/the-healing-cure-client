@@ -31,7 +31,7 @@
    
 }
 
-button{
+.button{
     width: 100px;
     border-color: transparent;
     background-color: #7db17f ;
@@ -42,4 +42,11 @@ button{
     border-color: transparent;
     font-weight: bolder;
     
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(0, 92, 29);
+    transition: transform 150ms;
+    transform: scale(1.02);
 }

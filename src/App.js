@@ -6,6 +6,7 @@ import Explore from "./pages/Explore/Explore";
 import Navbar from "./components/Navbar/Navbar";
 import {Toaster} from "react-hot-toast"
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Edit from "./pages/Edit/Edit";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       />
       <Navbar />
       <Routes>
+        <Route path="/explore/:id/edit" element={<Edit />} />
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<AddForm />} />
         <Route path="/explore/:id" element={<InfoPage />} />

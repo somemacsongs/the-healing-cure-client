@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import {Link} from "react-router-dom"
+import style from "./MegaCard.module.css"
 
 function MegaCard(props) {
   return (
@@ -15,7 +16,7 @@ function MegaCard(props) {
               <Card.Text>
                 {props.text}
               </Card.Text>
-              <Link to={props.link}><center><Button variant="primary">{props.button}</Button></center></Link>
+              <Link to={props.link}><center><Button variant="primary" className={style.primary}>{props.button}</Button></center></Link>
             </Card.Body>
           </Card>
         </Col>
