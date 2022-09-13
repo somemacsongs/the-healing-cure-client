@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"
-
+import { Link } from "react-router-dom"
+import toast from "react-hot-toast"
+import style from "./AddForm.module.css"
 
 export default function AddForm () {
-    const navigate = useNavigate();
     const [form, setForm] = useState({
         name: "",
         type: "",
@@ -30,63 +30,83 @@ export default function AddForm () {
             "https://ironrest.herokuapp.com/the-healing-cure",
             form
           );
-    
-          navigate("/");
-    
-          console.log(response);
+          handleToast();
         } catch (err) {
           console.log(err);
         }
       }
 
+      function handleToast(){
+        toast((t) => (
+          <span>
+            Would you like to keep adding strains?
+            <button className= "btn btn-success" onClick={() => toast.dismiss(t.id)}>
+              Yes
+            </button>
+            <Link to="/explore">
+                <button className= "btn btn-primary">
+                    No
+                </button>
+            </Link>
+          </span>
+        ));
+      }
+    
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={style.grid}>
+            <label htmlFor="name">Name</label>
+            <input 
+                id="name"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+            />
             <label htmlFor="type">Type</label>
             <input 
                 id="type"
-                type="type"
+                name="type"
                 value={form.type}
                 onChange={handleChange}
             />
             <label htmlFor="thc">THC</label>
             <input 
                 id="thc"
-                thc="thc"
+                name="thc"
                 value={form.thc}
                 onChange={handleChange}
             />
             <label htmlFor="cbd">CBD</label>
             <input 
                 id="cbd"
-                cbd="cbd"
+                name="cbd"
                 value={form.cbd}
                 onChange={handleChange}
             />
             <label htmlFor="cbg">CBG</label>
             <input 
                 id="cbg"
-                cbg="cbg"
+                name="cbg"
                 value={form.cbg}
                 onChange={handleChange}
             />
             <label htmlFor="terpeno">Terpene</label>
             <input 
-                id="terpeno"
-                terpeno="terpeno"
+                id="terpene"
+                name="terpene"
                 value={form.terpene}
                 onChange={handleChange}
             />
             <label htmlFor="flavor">Flavor</label>
             <input 
                 id="flavor"
-                flavor="flavor"
+                name="flavor"
                 value={form.flavor}
                 onChange={handleChange}
             />
             <label htmlFor="helpw">Helps With</label>
             <input 
                 id="helpw"
-                helpw="helpw"
+                name="helpw"
                 value={form.helpw}
                 onChange={handleChange}
             />
