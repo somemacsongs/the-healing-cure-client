@@ -1,12 +1,15 @@
+import {Link} from "react-router-dom"
+
 export default function Navbar() {
     return(
     <nav className="navbar navbar-expand-lg bg-light">
     <nav className="navbar bg-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <Link to="/">
       <img src="https://sanctuarywellnessinstitute.com/cannabis/images/cannabis-card-logo.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
       The Healing Cure
-    </a>
+    </Link>
+    
   </div>
 </nav>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
