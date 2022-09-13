@@ -1,37 +1,46 @@
 import {Link} from "react-router-dom"
+import Dropdown from 'react-bootstrap/Dropdown';
+import style from "./Navbar.module.css"
 
 export default function Navbar() {
     return(
-    <nav className="navbar navbar-expand-lg bg-light">
-    <nav className="navbar bg-light">
-  <div className="container-fluid">
-    <Link to="/">
-      <img src="https://sanctuarywellnessinstitute.com/cannabis/images/cannabis-card-logo.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
-      The Healing Cure
-    </Link>
-    
-  </div>
-</nav>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-            <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">About Us</a></li>
-                <li><a className="dropdown-item" href="#">History of Cannabis 101</a></li>
-                <li><hr className="dropdown-divider"/></li>
-                <li><a className="dropdown-item" href="#">Explore</a></li>
-                <li><a className="dropdown-item" href="#">Create</a></li>
-            </ul>
-            </li>
-
-        </ul>
-        <form className="d-flex" role="search">
-        </form>
+    <nav className="navbar navbar-expand-lg" id={style.container}>
+      <nav className="navbar">
+        <div className="container-fluid">
+          <Link to="/" style={{textDecoration: "none"}}>
+            <img src="https://sanctuarywellnessinstitute.com/cannabis/images/cannabis-card-logo.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
+            <span id={style.title}>The Healing Cure</span>
+          </Link>
         </div>
-   
+      </nav>
+      <Dropdown id={style.menu}>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          Menu
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="/">Home</Dropdown.Item>
+          <Dropdown.Item href="/aboutus">About Us</Dropdown.Item>
+          <Dropdown.Item href="/history">History of Cannabis 101</Dropdown.Item>
+          <Dropdown.Item href="/explore">Explore</Dropdown.Item>
+          <Dropdown.Item href="/create">Create</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>  
     </nav>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -44,7 +44,7 @@ function InfoPage (){
         try{
           await axios.delete(`https://ironrest.herokuapp.com/the-healing-cure/${id}`);
           toast.dismiss(t.id);
-          navigate("/");
+          navigate("/explore");
         } catch (err) {
           console.log(err);
         }
@@ -57,7 +57,7 @@ function InfoPage (){
         <h1>Name: {strain.name}</h1>
         <h4>THC level: {strain.thc}%</h4>
         <h4>CBD level: {strain.cbd}%</h4>
-        <Link to={`/${id}/edit`}><button>Editar</button></Link>
+        <Link to={`/explore/${id}/edit`}><button>Editar</button></Link>
         <button onClick={handleToast}>Deletar</button>
       </>
     );

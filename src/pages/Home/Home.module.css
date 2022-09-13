@@ -1,0 +1,11 @@
+.megaCard{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 1%;
+
+}
+
+.text{
+    width: 50px;
+}

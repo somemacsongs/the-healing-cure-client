@@ -1,0 +1,19 @@
+.AboutCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.AboutLink{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.eachPerson{
+    width: 30rem;
+}
+
+.profilePic {
+    width: 10rem;
+}

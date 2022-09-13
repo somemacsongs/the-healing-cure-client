@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from "react-router-dom";
 import style from "./Explore.module.css"
 import Card from "../../components/Card/Card";
+import AddCard from "../../components/AddCard/AddCard";
 
 
 function Explore(){
@@ -26,9 +26,7 @@ function Explore(){
     return (
         <>
             <div className={style.grid}>
-                <Link to="/create">
-                    <button>Add a Strain!</button>
-                </Link>
+                <AddCard />
                {strains.map((current) => {return <Card strain={current} />})}
             </div>
             
