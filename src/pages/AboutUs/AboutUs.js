@@ -9,7 +9,7 @@ function AboutUs(){
     return (
         <>
             <div>
-                <center><h1>ABOUT US</h1></center>
+                <center><h1 className={style.title}>About Us</h1></center>
             </div>
 
         <div className={style.AboutCard}>
@@ -17,12 +17,12 @@ function AboutUs(){
                 <h2>Pedro Macena</h2>
                 <img src={mac} alt="PedroMacena" className={style.profilePic}/>
                 <div className={style.AboutLink}>
-                    <Link to="https://github.com/somemacsongs">
+                    <a href="https://github.com/somemacsongs">
                         <button className={style.button}><img className={style.icon} src={giticon} alt="giticon" /></button>
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/pedromacena/">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedromacena/">
                         <button className={style.button}><img className={style.icon} src={inicon} alt="linkdinicon" /></button>
-                    </Link>
+                    </a>
                 </div>
 
             </div>
@@ -30,12 +30,12 @@ function AboutUs(){
                 <h2>Lucas Vitro</h2>
                 <img src={vitro} alt="LucasVitro" className={style.profilePic}/>
                 <div className={style.AboutLink}>
-                    <Link to="https://github.com/somemacsongs">
+                    <a href="https://github.com/Vitroo80">
                         <button className={style.button}><img className={style.icon} src={giticon} alt="giticon" /></button>
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/pedromacena/">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucasvitro/">
                         <button className={style.button}><img className={style.icon} src={inicon} alt="linkdinicon" /></button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

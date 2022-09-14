@@ -16,7 +16,7 @@ function MegaCard(props) {
               <Card.Text style={{maxWidth: "25rem", marginLeft: "1rem"}}>
                 <center>{props.text}</center>
               </Card.Text>
-              <Link to={props.link}><center><Button variant="primary" className={style.primary}>{props.button}</Button></center></Link>
+              <Link to={props.link}><center><Button variant="primary" className={style.primary} style={{padding:"0.8rem", width:"8rem"}}>{props.button}</Button></center></Link>
             </Card.Body>
           </Card>
         </Col>
