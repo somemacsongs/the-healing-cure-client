@@ -69,6 +69,7 @@ export default function AddForm () {
       }
     
     return (
+      <center>
         <form onSubmit={handleSubmit} className={style.grid}>
             <label htmlFor="name">Name</label>
             <input 
@@ -135,7 +136,8 @@ export default function AddForm () {
             />
 
             
-            <button type="submit">Submit!</button>
+            <center><button type="submit" className="btn btn-primary" style={{width:"5rem", margin:"1rem"}}>Submit!</button></center>
         </form>
+     </center>
     );
 }

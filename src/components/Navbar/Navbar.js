@@ -7,7 +7,7 @@ export default function Navbar() {
     return(
     <nav className="navbar navbar-expand-lg" id={style.container}>
       <nav className="navbar">
-        <div className="container-fluid">
+        <div className="container-fluid" style={{marginTop:"0.7rem"}}>
           <Link to="/" style={{textDecoration: "none", display: "flex", justifyContent: "center", alignItems:"center"}}>
             <img src={logo} alt="Logo" width="75" height="75" className="d-inline-block align-text-top"/>
             <span id={style.title}> The Healing Cure</span>

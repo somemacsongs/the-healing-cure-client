@@ -56,7 +56,8 @@ function Edit (){
       }
 
     return (
-        <form onSubmit={handleSubmit} style={{display: "grid", margin: "5rem"}}>
+      <center>
+        <form onSubmit={handleSubmit} style={{display: "grid", margin: "5rem", width:"40%"}}>
             <label htmlFor="name">Name</label>
             <input 
                 id="name"
@@ -122,8 +123,9 @@ function Edit (){
             />
 
             
-            <button type="submit" className="btn btn-primary">Submit!</button>
+            <center><button type="submit" className="btn btn-warning" style={{width:"5rem", margin:"1rem"}}>Confirm</button></center>
         </form>
+      </center>
     );
 }
 
