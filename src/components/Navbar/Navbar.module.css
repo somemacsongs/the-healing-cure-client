@@ -3,13 +3,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(55, 177, 55);
+    /* background-image: linear-gradient(60deg, red, yellow, #5CA63A); */
+    height: 80px;
 }
 
 #menu{
     margin-right: 2rem;
 }
 
+.drop{
+    background-color: #d86161;
+}
+
 #title{
-    color:black;
+    color:rgb(11, 68, 15);
+    font-family: Impact, fantasy;
+    font-size: 30px;
+    margin-bottom: 5px;
 }

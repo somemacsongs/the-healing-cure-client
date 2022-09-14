@@ -31,13 +31,13 @@ function InfoPage (){
           <span>
             <p>Are you sure you want to <b>delete</b> {strain.name}?</p>
             <button onClick={() => toast.dismiss(t.id)} style={{marginRight:"0.5rem"}} className="btn btn-danger">
-              Nao
+              No
             </button>
             <button className= "btn btn-success" onClick={()=>{
               handleDelete(t);
               }}
             >
-              Sim
+              Yes
             </button>
           </span>
         ));

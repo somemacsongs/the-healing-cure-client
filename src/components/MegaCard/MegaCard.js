@@ -11,7 +11,7 @@ function MegaCard(props) {
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col>
           <Card style={{marginTop:"3rem"}}>
-            <Card.Img variant="top" src={props.image} style={{width: "30rem", backgroundImage: "linear-gradient(60deg, red, yellow, green)"}}/>
+            <Card.Img variant="top" src={props.image} style={{width: "30rem", backgroundImage: "linear-gradient(60deg, red, yellow, #5CA63A)"}}/>
             <Card.Body>
               <Card.Text style={{maxWidth: "25rem", marginLeft: "1rem"}}>
                 <center>{props.text}</center>

@@ -14,21 +14,21 @@ h4{
 
 .primary:hover{
     cursor: pointer;
-    box-shadow: 0 0.2rem 1.3rem 0 rgb(0, 68, 128);
+    box-shadow: 0 0.1rem 1rem 0 rgb(62, 98, 130);
     transition: transform 150ms;
     transform: scale(1.02);
 }
 
 .warning:hover{
     cursor: pointer;
-    box-shadow: 0 0.2rem 1.3rem 0 rgb(173, 173, 0);
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(171, 171, 92);
     transition: transform 150ms;
     transform: scale(1.02);
 }
 
 .danger:hover{
     cursor: pointer;
-    box-shadow: 0 0.2rem 1.3rem 0 rgb(128, 0, 0);
+    box-shadow: 0 0.1rem 1rem 0 rgb(169, 72, 72);
     transition: transform 150ms;
     transform: scale(1.02);
 }
