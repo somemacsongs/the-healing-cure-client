@@ -10,11 +10,11 @@ function MegaCard(props) {
     <Row xs={50} md={50} className="g-4">
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col>
-          <Card>
-            <Card.Img variant="top" src={props.image} />
+          <Card style={{marginTop:"3rem"}}>
+            <Card.Img variant="top" src={props.image} style={{width: "30rem", backgroundImage: "linear-gradient(60deg, red, yellow, green)"}}/>
             <Card.Body>
-              <Card.Text>
-                {props.text}
+              <Card.Text style={{maxWidth: "25rem", marginLeft: "1rem"}}>
+                <center>{props.text}</center>
               </Card.Text>
               <Link to={props.link}><center><Button variant="primary" className={style.primary}>{props.button}</Button></center></Link>
             </Card.Body>

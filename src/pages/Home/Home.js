@@ -1,5 +1,7 @@
 import MegaCard from "../../components/MegaCard/MegaCard";
 import style from "./Home.module.css"
+import explorePic from "../../assets/images/explorePic.png"
+import createPic from "../../assets/images/createPic.png"
 
 function Home (){
 
@@ -7,18 +9,18 @@ function Home (){
     <>
     <div className={style.megaCard} >
     <MegaCard className={style.text}
-      image="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-      title="Explore Strains"
-      text="See all strains"
-      button="EXPLORE"
+      image={explorePic}
+      text="Explore the many different strains of Cannabis and how they can be used to help treat all sorts of conditions!"
+      button="Explore"
       link="/explore"
+      r="66" g="157" b="81"
     />
     <MegaCard className={style.text}
-      image="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-      title="Create Strain"
-      text="Create a new strain"
-      button="CREATE"
+      image={createPic}
+      text="Something missing? Here you can create a new strain and add it instantly to our database!"
+      button="Create"
       link="/create"
+      r="231" g="228" b="41"
     />
     </div>
     

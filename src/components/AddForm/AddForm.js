@@ -14,7 +14,7 @@ export default function AddForm () {
         terpene: "",
         flavor: "",
         helpw: "",
-        isLocked: true,
+        isLocked: false,
         image: "",
     });
 
@@ -40,11 +40,27 @@ export default function AddForm () {
         toast((t) => (
           <span>
             Would you like to keep adding strains?
-            <button className= "btn btn-success" onClick={() => toast.dismiss(t.id)}>
-              Yes
-            </button>
+            <Link to="/create">
+                <button className= "btn btn-success" onClick={() => {
+                    setForm({
+                        name: "",
+                        type: "",
+                        thc: 0,
+                        cbd: 0,
+                        cbg: 0,
+                        terpene: "",
+                        flavor: "",
+                        helpw: "",
+                        isLocked: false,
+                        image: "",
+                    })
+                    toast.dismiss(t.id)}}>
+                    Yes
+                </button>
+            </Link>
+                
             <Link to="/explore">
-                <button className= "btn btn-primary">
+                <button className= "btn btn-primary" style={{marginLeft:"0.5rem"}} onClick={() => toast.dismiss(t.id)}>
                     No
                 </button>
             </Link>
