@@ -28,11 +28,11 @@ function InfoPage (){
     function handleToast(){
       toast((t) => (
         <span>
-          Tem certeza que quer <b>deletar</b> {strain.name}?
-          <button onClick={() => toast.dismiss(t.id)}>
+          <p>Are you sure you want to <b>delete</b> {strain.name}?</p>
+          <button onClick={() => toast.dismiss(t.id)} style={{marginRight:"0.5rem"}} className="btn btn-danger">
             Nao
           </button>
-          <button className= "btn btn-primary" onClick={()=>{
+          <button className= "btn btn-success" onClick={()=>{
             handleDelete(t);
             }}
           >
