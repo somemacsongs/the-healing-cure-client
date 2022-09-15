@@ -1,7 +1,9 @@
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="700px"/>
+<div>
+<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="600px" margin-bottom="5px"/>
 </div>
+
+
 
   Welcome to our project, "The Healing Cure" is a website about Medical Cannabis and its benefits.
   Have you ever considered Cannabis might help you treat your chronic illness? Many scientists dedicate their lives to studying the benefits of Cannabis-based medical treatments and the results are... awesome. 
