@@ -71,72 +71,79 @@ export default function AddForm () {
     return (
       <center>
         <form onSubmit={handleSubmit} className={style.grid}>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Name:</label>
             <input 
                 id="name"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="type">Type</label>
+            <label htmlFor="type">Type:</label>
             <input 
                 id="type"
                 name="type"
                 value={form.type}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="thc">THC</label>
+            <label htmlFor="thc">THC:</label>
             <input 
                 id="thc"
                 name="thc"
                 value={form.thc}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="cbd">CBD</label>
+            <label htmlFor="cbd">CBD:</label>
             <input 
                 id="cbd"
                 name="cbd"
                 value={form.cbd}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="cbg">CBG</label>
+            <label htmlFor="cbg">CBG:</label>
             <input 
                 id="cbg"
                 name="cbg"
                 value={form.cbg}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="terpeno">Terpene</label>
+            <label htmlFor="terpeno">Terpene:</label>
             <input 
                 id="terpene"
                 name="terpene"
                 value={form.terpene}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="flavor">Flavor</label>
+            <label htmlFor="flavor">Flavor:</label>
             <input 
                 id="flavor"
                 name="flavor"
                 value={form.flavor}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="helpw">Helps With</label>
+            <label htmlFor="helpw">Helps With:</label>
             <input 
                 id="helpw"
                 name="helpw"
                 value={form.helpw}
                 onChange={handleChange}
+                style={{margin:"0.6rem"}}
             />
-            <label htmlFor="image">Image</label>
+            <label htmlFor="image">Image:</label>
             <input 
                 id="image"
                 name="image"
                 value={form.image}
                 onChange={handleChange}
-            />
-
-            
-            <center><button type="submit" className="btn btn-primary" style={{width:"5rem", margin:"1rem"}}>Submit!</button></center>
+                style={{margin:"0.6rem"}}
+            />   
+            <center><button type="submit" className={`btn btn-primary ${style.primary}`} style={{width:"7rem", margin:"1rem"}}>Create!</button></center>
         </form>
      </center>
     );

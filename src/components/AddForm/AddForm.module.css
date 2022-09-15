@@ -3,3 +3,11 @@
     margin: 5rem;
     width: 40%;
 }
+
+.primary:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.3rem 0 rgb(0, 68, 128);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
