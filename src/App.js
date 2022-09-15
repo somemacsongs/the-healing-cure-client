@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom";
-import AddForm from "./components/AddForm/AddForm"
+import Create from "./pages/Create/Create";
 import InfoPage from "./pages/InfoPage/InfoPage";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/explore/:id/edit" element={<Edit />} />
         <Route path="/" element={<Home />} />
-        <Route path="/create" element={<AddForm />} />
+        <Route path="/create" element={<Create />} />
         <Route path="/explore/:id" element={<InfoPage />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/aboutus" element={<AboutUs />} />

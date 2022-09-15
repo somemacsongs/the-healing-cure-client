@@ -58,7 +58,9 @@ function Edit (){
 
     return (
       <center>
-        <form onSubmit={handleSubmit} style={{display: "grid", margin: "5rem", width:"40%"}}>
+        <div className={style.container}>
+        <center><h1 className={style.title}>Update this strain's info!</h1></center>
+        <form onSubmit={handleSubmit} className={style.grid}>
             <label htmlFor="name">Name:</label>
             <input 
                 id="name"
@@ -66,6 +68,7 @@ function Edit (){
                 value={form.name}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
             <label htmlFor="type">Type:</label>
             <input 
@@ -74,6 +77,7 @@ function Edit (){
                 value={form.type}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
             <label htmlFor="thc">THC:</label>
             <input 
@@ -82,6 +86,8 @@ function Edit (){
                 value={form.thc}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
+                max={100}
             />
             <label htmlFor="cbd">CBD:</label>
             <input 
@@ -90,6 +96,8 @@ function Edit (){
                 value={form.cbd}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
+                max={100}
             />
             <label htmlFor="cbg">CBG:</label>
             <input 
@@ -98,6 +106,8 @@ function Edit (){
                 value={form.cbg}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
+                max={100}
             />
             <label htmlFor="terpeno">Terpene:</label>
             <input 
@@ -106,6 +116,7 @@ function Edit (){
                 value={form.terpene}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
             <label htmlFor="flavor">Flavor:</label>
             <input 
@@ -114,6 +125,7 @@ function Edit (){
                 value={form.flavor}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
             <label htmlFor="helpw">Helps With:</label>
             <input 
@@ -122,6 +134,7 @@ function Edit (){
                 value={form.helpw}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
             <label htmlFor="image">Image:</label>
             <input 
@@ -130,11 +143,13 @@ function Edit (){
                 value={form.image}
                 onChange={handleChange}
                 style={{margin:"0.6rem"}}
+                required
             />
 
             
             <center><button type="submit" className={`btn btn-warning ${style.warning}`} style={{width:"7rem", margin:"1rem"}}>Confirm</button></center>
         </form>
+        </div>
       </center>
     );
 }

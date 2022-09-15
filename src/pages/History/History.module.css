@@ -41,3 +41,9 @@
     padding: 2rem;
     text-align: justify;
 }
+
+.h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-indent: 1rem;
+    color:rgb(11, 68, 15);
+}
