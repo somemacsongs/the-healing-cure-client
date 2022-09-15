@@ -1,5 +1,5 @@
 <div>
-<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="500px" style={{borderRadius:"10px"}}/>
 </div>
 <hr>
   Welcome to our project, "The Healing Cure" is a website about Medical Cannabis and its benefits.
