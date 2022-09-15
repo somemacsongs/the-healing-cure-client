@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="150px"/>
+<img src="https://user-images.githubusercontent.com/110558791/190454042-4842029d-aba3-4deb-a9ab-01749a46c626.png" width="700px"/>
 </div>
 
 Welcome to our project, "The Healing Cure" is a website about Medical Cannabis and its benefits.
@@ -10,9 +10,9 @@ Check out our website [here](https://thehealingcure.netlify.app).
 If you wanna know more about this project check out our presentation.
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110558791/190453759-720bd8de-0f8c-4742-8d08-c9f3991ee325.png" width="500px"/>
+<img src="https://user-images.githubusercontent.com/110558791/190453759-720bd8de-0f8c-4742-8d08-c9f3991ee325.png" width="700px"/>
 </div>
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110558791/190453870-7ff9da64-1478-429f-9ba9-d417b9fd5948.png" width="500px"/>
+<img src="https://user-images.githubusercontent.com/110558791/190453870-7ff9da64-1478-429f-9ba9-d417b9fd5948.png" width="700px"/>
 </div>
