@@ -22,8 +22,8 @@ export default function Navbar() {
           <Dropdown.Item href="/">Home</Dropdown.Item>
           <Dropdown.Item href="/aboutus">About Us</Dropdown.Item>
           <Dropdown.Item href="/history">History of Cannabis 101</Dropdown.Item>
-          <Dropdown.Item href="/explore">Explore</Dropdown.Item>
-          <Dropdown.Item href="/create">Create</Dropdown.Item>
+          <Dropdown.Item href="/explore"><b>Explore</b></Dropdown.Item>
+          <Dropdown.Item href="/create"><b>Create</b></Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </nav>
