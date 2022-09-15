@@ -1,7 +1,9 @@
 .grid{
     display: grid;
     margin: 5rem;
-    width: 40%;
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .primary:hover{
