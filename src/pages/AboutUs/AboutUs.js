@@ -12,7 +12,7 @@ function AboutUs(){
                 <center>
                     <h1 className={style.title}>About Us</h1>
                     <p style={{width:"40rem", textAlign:"justify", textIndent:"3rem", marginBottom:"2rem", border:"solid rgba(128, 128, 128, 0.523)", borderRadius:"10px", padding:"1.5rem", fontFamily: 'Verdana, Geneva, Tahoma, sans-serif'}}>
-                       Have you ever considered Cannabis might help you treat your cronic illness? 
+                       Have you ever considered Cannabis might help you treat your chronic illness? 
                        Many scientists dedicate their lives to study the benefits of Cannabis-based medical treatments
                        and the results are... awesome. This website is a project created during the course of a Full Stack Web Development Bootcamp at 
                        <a href="https://www.ironhack.com/" style={{textDecoration:"none", color:"green"}}> Ironhack </a>
