@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom"
 import toast from "react-hot-toast"
 import style from "./AddForm.module.css"
+import { api } from "../../api/api";
 
 export default function AddForm () {
     const [form, setForm] = useState({
@@ -26,10 +27,7 @@ export default function AddForm () {
         e.preventDefault();
     
         try {
-          const response = await axios.post(
-            "https://ironrest.herokuapp.com/the-healing-cure",
-            form
-          );
+          const response = await api.post("/strains/strain",form);
           handleToast();
         } catch (err) {
           console.log(err);
