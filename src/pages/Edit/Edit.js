@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import toast from "react-hot-toast"
 import style from "./Edit.module.css"
+import { api } from "../../api/api"
 
 function Edit (){
     const { id } = useParams();
@@ -23,9 +24,7 @@ function Edit (){
     useEffect(() => {
       async function fetchStrain() {
         try {
-          const response = await axios.get(
-            `https://ironrest.herokuapp.com/the-healing-cure/${id}`
-          );
+          const response = await api.get(`/strains/strain/${id}`);
           delete response.data._id
           setForm({ ...response.data });
         } catch (err) {
@@ -42,8 +41,8 @@ function Edit (){
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-          const response = await axios.put(
-            `https://ironrest.herokuapp.com/the-healing-cure/${id}`,
+          const response = await api.put(
+            `strains/strain/${id}`,
             form
           );
     

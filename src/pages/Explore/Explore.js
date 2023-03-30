@@ -3,6 +3,7 @@ import axios from "axios";
 import style from "./Explore.module.css"
 import Card from "../../components/Card/Card";
 import AddCard from "../../components/AddCard/AddCard";
+import { api } from "../../api/api";
 
 
 function Explore(){
@@ -11,8 +12,8 @@ function Explore(){
     useEffect(() => {
     async function fetchStrains() {
         try {
-            const response = await axios.get(
-                "https://ironrest.herokuapp.com/the-healing-cure"
+            const response = await api.get(
+                "/strains/allStrains"
             );
 
         setStrains([...response.data]);

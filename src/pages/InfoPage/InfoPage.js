@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast"
 import style from "./InfoPage.module.css"
+import { api } from "../../api/api";
 
 
 function InfoPage (){
@@ -13,8 +14,8 @@ function InfoPage (){
     useEffect(() => {
       async function fetchStrain() {
         try {
-          const response = await axios.get(
-            `https://ironrest.herokuapp.com/the-healing-cure/${id}`
+          const response = await api.get(
+            `/strains/strain/${id}`
           );
   
           setStrain({ ...response.data });
@@ -57,7 +58,7 @@ function InfoPage (){
 
     async function handleDelete(t) {
         try{
-          await axios.delete(`https://ironrest.herokuapp.com/the-healing-cure/${id}`);
+          await api.delete(`/strains/strain/${id}`);
           toast.dismiss(t.id);
           navigate("/explore");
         } catch (err) {
