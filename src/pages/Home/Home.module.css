@@ -9,3 +9,17 @@
 .text{
     width: 50px;
 }
+
+@media (max-width: 1000px) {
+    .megaCard{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding-top: 1%;
+        max-width: fit-content;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    
+}
