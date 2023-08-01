@@ -12,6 +12,7 @@ function MegaCard(props) {
         <Col>
           <Card style={{marginTop:"2rem"}}>
             <Card.Img 
+              className={style.imageCard}
               variant="top" 
               src={props.image} 
               style={{width: "30rem", backgroundImage: "linear-gradient(60deg, red, yellow, green)"}}
