@@ -7,11 +7,11 @@ import vitro from "../../assets/images/vitro.jpg"
 
 function AboutUs(){
     return (
-        <>
-            <div>
+        <div className={style.container}>
+            <div className={style.text}>
                 <center>
                     <h1 className={style.title}>About Us</h1>
-                    <p style={{width:"40rem", textAlign:"justify", textIndent:"3rem", marginBottom:"2rem", border:"solid rgba(128, 128, 128, 0.523)", borderRadius:"10px", padding:"1.5rem", fontFamily: 'Verdana, Geneva, Tahoma, sans-serif'}}>
+                    <p className={style.aboutText} >
                        Have you ever considered Cannabis might help you treat your chronic illness? 
                        Many scientists dedicate their lives to study the benefits of Cannabis-based medical treatments
                        and the results are... awesome. This website is a project created during the course of a Full Stack Web Development Bootcamp at 
@@ -22,9 +22,10 @@ function AboutUs(){
                 </center>
             </div>
         <center>
-        <div className={style.AboutCard} style={{width:"55rem"}}>
+        <div className={style.AboutCard} >
+            
             <div className={style.eachPerson}>
-                <h2>Pedro Macena</h2>
+                <p className={style.name}>Pedro Macena</p>
                 <img src={mac} alt="PedroMacena" className={style.profilePic}/>
                 <div className={style.AboutLink}>
                     <a href="https://github.com/somemacsongs">
@@ -37,7 +38,7 @@ function AboutUs(){
 
             </div>
             <div className={style.eachPerson}>
-                <h2>Lucas Vitro</h2>
+                <p className={style.name}>Lucas Vitro</p>
                 <img src={vitro} alt="LucasVitro" className={style.profilePic}/>
                 <div className={style.AboutLink}>
                     <a href="https://github.com/Vitroo80">
@@ -50,7 +51,7 @@ function AboutUs(){
             </div>
         </div>
         </center> 
-        </>
+        </div>
     )
 }
 

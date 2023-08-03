@@ -13,13 +13,14 @@
 @media (max-width: 1000px) {
     .megaCard{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
         padding-top: 1%;
         max-width: fit-content;
         padding-left: 12%;
         padding-right: 12%;
         padding-bottom: 12%;
+        
     }
 
     
