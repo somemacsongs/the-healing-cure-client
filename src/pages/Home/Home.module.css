@@ -17,8 +17,9 @@
         flex-direction: column;
         padding-top: 1%;
         max-width: fit-content;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 12%;
     }
 
     

@@ -9,12 +9,12 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="container-fluid" style={{marginTop:"0.7rem"}}>
           <Link to="/" style={{textDecoration: "none", display: "flex", justifyContent: "center", alignItems:"center"}}>
-            <img src={logo} alt="Logo" width="75" height="75" className="d-inline-block align-text-top"/>
+            <img id={style.logo} src={logo} alt="Logo" width="75" height="75" className="d-inline-block align-text-top"/>
             <span id={style.title}> The Healing Cure</span>
           </Link>
         </div>
       </nav>
-      <Dropdown id={style.menu}>
+      <Dropdown className={style.menu}>
         <Dropdown.Toggle variant="success" id="dropdown-basic">
           Menu
         </Dropdown.Toggle>
